@@ -68,8 +68,8 @@ header{
     font-weight: 700;
     color: #131313;
     text-align: center;
-    margin: 0 180px;
-    width: 450px;
+    /* margin: 0 180px; */
+    /* width: 450px; */
     margin: 0 auto;
 }
 .header_content p{
@@ -104,6 +104,75 @@ header{
     font-size: 35px;
     font-family: 'Work Sans', sans-serif;
 }
+.team_text .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.team_text .our{
+    color: #131313;
+}
+.team_text .featture{
+    color: #FF900E;
+}
+/* feature section */
+#feature_part{
+    padding: 0 180px;
+}
+.feature_content{
+    display: flex;
+    gap: 35px;
+}
+.feature_text .section_head{
+    border-left: 4px solid #FF900E;
+    padding-left: 15px;
+}
+.feature_card h3{
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: #131313;
+}
+.feature_card .cards{
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.cards p{
+    font-size: 12px;
+}
+.feature_image img{
+    width: 470px;
+    height: 760px;
+    margin-left: 30px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.experiance{
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    width: 185px;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+    right: 20px;
+}
+.experiance h2{
+    font-size: 2.8rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.experiance p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+
+
 /* facts section */
 #facts_part{
     padding: 100px 180px;
@@ -119,6 +188,7 @@ header{
 }
 .facts_cards .card{
     width: 140px;
+    height: 120px;
     padding: 35px 25px 45px 25px;
     border-radius: 8px;
     border: 1px solid #FF900E;
@@ -171,7 +241,7 @@ header{
     header{
         padding: 10px;
     }
-    .navbar{
+    .navbar, .feature_content{
         flex-direction: column;
     }
     .navbar h3{
@@ -205,6 +275,20 @@ header{
     .team_image{
         width: 100%;
         grid-template-columns: 1fr;
+    }
+    /* feature part */
+    #feature_part{
+        padding: 10px;
+    }
+    .feature_content{
+        gap: 20px;
+    }
+    .feature_image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .feature_image .experiance{
+        position: static;
     }
     /* facts part */
     #facts_part{
@@ -267,6 +351,21 @@ header{
     .section_desctiption{
         padding: 0;
     }
+    /* feature part */
+    #feature_part{
+        padding: 10px;
+    }
+    .feature_content{
+        flex-direction: column;
+    }
+    .feature_image img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .feature_image .experiance{
+        position: static;
+    }
+
     /* facts part */
     #facts_part{
         padding: 20px 10px;
